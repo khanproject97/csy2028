@@ -2,7 +2,7 @@
 <?php
 
 /*
-
+this is for the print of hello
 $a=true;
 $b=1;
 while($a==true){
@@ -13,13 +13,17 @@ while($a==true){
 	break;
 	}
 }
-*/
 
-/* 
+/*
+
 
 GET can be used but it is not secure
 
- */
+
+
+/* 
+
+this is for the submmition of date by form.
 
 
  if(isset($_POST['click'])){
@@ -51,6 +55,70 @@ else{
 	<input type ="number" name="number"><br><br>
 	<input type="submit" name ="click" value="Check">
 	
-</form>
+</form> 
+
+*/
 
 
+
+/* 
+this is to convert temperature.
+
+if(isset($_POST['click'])){
+
+$a=$_POST['Degree'];
+
+
+echo "the value in degree is ".$a."C<br>";
+
+$m=1.8*$a +32;
+
+echo "the value in Fahrenheit is:".$m."F";
+
+
+}
+?>
+
+
+<form action  ="" method="post">
+	<label>Enter temperature in Celcius :</label>
+	<input type ="number" name="Degree"><br><br>
+	<input type="submit" name ="click" value="Convert">
+	
+</form> 
+
+*/
+
+
+
+if(isset($_POST['click'])){
+
+$a=$_POST['Decimal'];
+
+
+echo "The Decimal Decimal number".$a."<br>";
+
+$m=$a%2;
+
+
+
+
+echo "the value in Binary is:".$m;
+
+
+}
+?>
+
+
+<form action  ="" method="post">
+	<label>Enter the value in Decimal :</label>
+	<input type ="number" name="Decimal"><br><br>
+	<input type="submit" name ="click" value="Convert">
+	
+</form> 
+
+
+
+
+
+ 
